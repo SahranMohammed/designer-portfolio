@@ -1,0 +1,68 @@
+@import "tailwindcss";
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    margin: 0;
+    background: #f8fafc;
+    color: #0f172a;
+    font-family: Inter, sans-serif;
+}
+
+.glass {
+    background: rgba(255, 255, 255, 0.45);
+    backdrop-filter: blur(25px);
+    -webkit-backdrop-filter: blur(25px);
+    border: 1px solid rgba(255, 255, 255, 0.5);
+    box-shadow:
+        0 8px 32px rgba(0, 0, 0, 0.08),
+        inset 0 1px 0 rgba(255, 255, 255, 0.7);
+}
+
+.hero-gradient {
+    background:
+        radial-gradient(circle at top left, rgba(99, 102, 241, .12), transparent 35%),
+        radial-gradient(circle at bottom right, rgba(59, 130, 246, .08), transparent 35%);
+}
+
+.float-animation {
+    animation: float 5s ease-in-out infinite;
+}
+
+.float-animation-delay {
+    animation: float 5s ease-in-out infinite;
+    animation-delay: 1s;
+}
+
+.float-animation-delay-2 {
+    animation: float 5s ease-in-out infinite;
+    animation-delay: 2s;
+}
+
+@keyframes float {
+
+    0%,
+    100% {
+        transform: translateY(0px);
+    }
+
+    50% {
+        transform: translateY(-15px);
+    }
+}
+
+@keyframes marquee {
+    from {
+        transform: translateX(0);
+    }
+
+    to {
+        transform: translateX(-50%);
+    }
+}
+
+.animate-marquee {
+    animation: marquee 20s linear infinite;
+}
