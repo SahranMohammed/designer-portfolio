@@ -76,11 +76,6 @@ export default function TestimonialWall() {
         
         {/* Section Header Cluster */}
         <div className="text-center max-w-3xl mx-auto mb-20">
-          <span className="inline-flex items-center gap-2 px-5 py-2 rounded-full bg-white/40 backdrop-blur-xl border border-white/60 text-xs font-bold text-slate-500 uppercase tracking-widest shadow-[inset_0_1px_1px_rgba(255,255,255,0.4)]">
-            <Sparkles size={12} className="text-indigo-500" />
-            <span>Client Evaluation</span>
-          </span>
-          
           <h2 className="mt-6 text-5xl md:text-7xl font-black tracking-tight text-slate-900 leading-[1.05]">
             Trusted by the Next
             <br />
